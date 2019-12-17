@@ -62,7 +62,7 @@ class ItemTraverser:
             if not kid_json:
                 continue
             if "text" in kid_json: #some comments might be deleted   
-                print("Added comment {}".format(kid_id))
+                #print("Added comment {}".format(kid_id))
                 self.kids_text.append(kid_json["text"])
             #checking if any more kids available and adding them
             if "kids" in kid_json:

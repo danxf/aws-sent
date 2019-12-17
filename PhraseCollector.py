@@ -24,7 +24,7 @@ class PhraseCollector():
         
     def get_stories(self):
         for top_story in self.top_stories:
-            print("getting story {}".format(top_story))
+            #print("getting story {}".format(top_story))
             top_story_json = utilities.get_json(top_story)
             if not top_story_json:
                 raise RuntimeError("API error")
